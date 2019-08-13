@@ -1,0 +1,122 @@
+/*公共样式*/
+*{padding: 0; margin: 0; border: 0;box-sizing: border-box;}
+html, body{overflow-x: hidden;height: 100%; }
+a{text-decoration: none;}
+ul, li, ol{list-style: none;}
+html{font-size: 62.5%; /*10 ÷ 16 × 100% = 62.5%*/ line-height: 1;}
+/*
+body{   font-family: roboto,'Helvetica Neue', Helvetica, Arial, sans-serif; color: rgba(0,0,0,0.87); font-size-adjust: none; -webkit-text-size-adjust: none; -webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none;}
+*/
+ 
+body{ font-family: roboto,'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 12px;line-height: 1.4;color: #333; }
+
+img{vertical-align: middle; border: 0;}
+input{outline: none; border-radius: 0; box-shadow: 0 0; border: none; /*-webkit-appearance: none; -webkit-tap-highlight-color: rgba(255, 0, 0, 0);*/}
+/*input[type="search"]::-webkit-search-cancel-button{display: none}*/
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary{ display: block;}
+/*common*/
+video { display: inline-block; vertical-align: baseline; }
+table { border-collapse: collapse; border-spacing: 0; width: 100%; display: table; } 
+td, th { padding: 0; padding: 15px 5px; display: table-cell; text-align: left; vertical-align: middle; } 
+table, th, td { border: none; } 
+ 
+.clearfix:after,.clearfix:before{content:"";display:block;height:0;clear:both;visibility:hidden;}    
+
+.header{ height:60px; background: #1b5ba5; z-index: 9; position: relative;  }
+
+.htmlClass{ overflow-y: hidden;}
+
+.login-out{ font-size:18px; color: red;}
+.login-out p a{ color: #fff; font-size:16px; margin-right: 15px; top:16px; position: relative; }
+.header-title{ font-weight: normal;font-size:18px; font-family: "微软雅黑";  float:left; color: #fff; line-height: 60px; padding:0; margin: 0; margin-left: 15px;}
+.login-out p a img{ margin-right: 5px; top:-2px; position: relative;}
+
+
+
+
+/*导航*/
+.nav-ul{ padding-top:20px;}
+.nav-ul li{  line-height: 30px; text-align: left; padding-left:20px; cursor: pointer; color: #fff;font-size:14px; } 
+.nav-ul li:hover{ background: #0e5ab3; } 
+.nav-ul li.active{ background:#185091 ;} 
+.nav-ul li p{  margin-left: -20px;}
+.nav-ul li p span{ margin-left: 20px;}
+.nav-ul li ul{ margin-left: -20px;}
+.nav-ul li ul li{ padding-left: 40px;} 
+.people-ul{ padding-top: 0;}
+/*导航end*/
+
+
+ 
+
+
+
+
+
+/*中间主体样式*/
+.content{ width:100%; position: relative;}
+.main-left{width: 200px; position: absolute; left:0; top:0; bottom:0; height: 100%; min-height: 1000px; background: #3078ca; }
+.main-right{ width:100%; padding-left:210px; padding-right:10px; }
+
+.table-box{  position: relative; top: 10px; border-left:1px solid #eceeef; border-top:1px solid #eceeef;}
+.table-box tr td{ border-right:1px solid #eceeef; border-bottom: 1px solid #eceeef; text-align: center; padding:10px 5px; font-size:14px; line-height: 22px; word-break: break-all; }
+.table-box tr td.td-width{ min-width: 100px;}
+/*.table-btn{ display:inline-block; font-size:12px; line-height: 1;padding:5px 10px;text-align: center; white-space: nowrap;  vertical-align: middle;    cursor: pointer;background: #0275d8; border-radius: .25rem; color: #fff; margin-right: 10px;}
+.table-btn-red{ background: #d9534f;}
+*/
+.table-btn{ background: none; color: #0275d8; margin-right: 10px; font-weight: bold; cursor: pointer;}
+.table-btn-red{ color: red;}
+
+.table-box tr.tr-title td{ background-image:-webkit-linear-gradient(to top, #e1ecfe, #f0f7ff); background-image:linear-gradient(to top,#e1ecfe, #f0f7ff); font-weight: bold; }
+.table-box tr.tr-main:nth-child(2n){ background: #f8f8f8;}
+.table-box tr td.add-td{ text-align: left;}
+.table-box tr td.add-td input{ border:1px solid #eee; padding-left:5px; padding:5px;} 
+.table-box tr td.add-td select{ width:120px; border:1px solid #eee; padding:5px;}
+.chose-btn , .add-btn{ display:inline-block; width:60px; text-align: center; height: 25px; line-height: 25px;  background: #0275d8; color: #fff; border-radius: 4px; cursor: pointer;}
+ 
+
+.table-box tr td.trgray{ background: #999;}
+.table-box tr.gray td{ background:#999!important ;}
+.table-box tr.gray td .btn-disabled{ display: none;}
+
+
+.regex-box{ display: none; padding-top: 15px;}
+
+.save-two-box{ display: none;}
+.save-two-btn{ display: none;}
+
+ 
+
+  
+
+
+
+/*登录页面*/
+.login-box{ width:100%; height: 100%; background: #eee; }
+
+.login-main{width:280px; height: 300px; background: #303d5f; padding:10px 20px; margin:auto; position: fixed; left:0; right: 0; top:20px; bottom: 0;border-radius: 4px;}
+.login-title{ text-align: center; font-size:20px; color: #fff; font-weight: bold; margin-bottom: 20px; margin-top: 10px;} 
+.login-msg { margin-bottom: 20px;}
+.login-msg input{ width:100%; height: 35px; line-height: 35px; padding:10px; border:1px solid #ccc; border-radius: 4px;}
+.login-btn{ text-align: center; cursor: pointer; display: block; width:100%; height:35px; line-height: 35px; float:right; color: #fff; font-size: 16px; background:#3078ca; border-radius:4px;
+    box-shadow: 0 1px 6px rgba(0,0,0,.12), 0 1px 6px rgba(0,0,0,.12);
+
+}
+/*登录页面 end*/
+
+
+
+
+
+
+
+
+
+
+ 
+/*公共媒介样式*/
+@media only screen and (max-width: 680px) { 
+	
+	 
+}
+ 
